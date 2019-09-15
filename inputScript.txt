@@ -1,0 +1,52 @@
+// A sample script for our game.
+// The titles of game sections are written as [title]
+// Game text is written plainly below
+// A game option (button) is written with a > at the start (see below)
+// A user input field is written with an @ (see [answerPhone])
+// Finally, a variable that's been set by user input is written like {this} (see {playerName} in [nameGiven])
+
+
+
+[initial]
+You wake up slouched at a desk with a horrible headache. There’s an empty bottle on your desk of something unpleasantly cheap. There’s a loud ringing in your ears, which you soon realise is actually on the desk. It’s your phone, ringing away, an unknown number on the screen.
+
+// An option component: First arg is the button label, second arg is the game section it takes us to next
+>Answer it > answerPhone
+>Hang it up and go back to sleep > dontAnswerPhone
+
+
+
+[dontAnswerPhone]
+You cancel the call and drift back into your hungover stupor. Before too long though, it rings again. Same number.
+>Answer it > answerPhone
+>Chuck it out the window > chuckOutPhone
+
+
+
+[chuckOutPhone]
+You fling your phone out the nearby open window and doze off back to sleep.
+Congratulations! You’ve failed the game in two clicks.
+>Try again > initial
+
+
+
+[answerPhone]
+“Hello?” you croak out.
+“Hello,” comes the elderly woman’s voice on the other end. “Is this Ace Valentine?”
+Well, that definitely sounds like a made-up name. Still – and this is quite embarrassing – you appear to have forgotten your own name. May as well make one up too.
+“No,” you say. “Not Ace. I’m…”
+
+// An input component. Arguments: the variable in the script we're setting, the section we go to after input, The text box placeholder, and whether or not to capitalise the first letter of the input string
+@playerName > nameGiven > Your name > true
+
+
+
+
+[nameGiven]
+“Oh, {playerName}? Do I have the right number, {playerName}? Is this the… ‘Special’ Detective Agency?”
+A faint memory swims up from the murky depths of your brain. Yes, the agency! That’s where you are. You got drunk off cheap wine by yourself in your office last night, in celebration of having cheap wine.
+“Yes,” you try say smoothly. “This is us. How may I’s helped you?”
+“Well, It’s my printer,” she responds. “It’s being… strange.”
+This is a short sample from the first draft of a game I’m currently working on, mainly shown here for demo purposes.
+I’ll update when I ever complete it.
+>Reset > initial
