@@ -1,5 +1,5 @@
 # Reactive-Scriptifier
-A companion app to Reactive Engine. Scriptifier converts your handwritten game scripts into Reactive Engine-compatible JSX.
+A companion app to Reactive Engine (https://github.com/liamroddy/Reactive-Engine). Scriptifier converts your handwritten game scripts into Reactive Engine-compatible JSX.
 
 How it works:
 1) Scriptifier comes with a handwritten sample script, called "inputScript.txt", the same script you can see up and running at http://danu6.it.nuigalway.ie/react/.
